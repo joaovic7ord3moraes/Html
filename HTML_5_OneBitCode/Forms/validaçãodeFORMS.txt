@@ -1,0 +1,9 @@
+Validação de forms:na tag <input> com o id e nome colocar o atributo required que torna o campo de pesquisa ou de dados obrigatório para o preenchimento.
+
+preencher o campo como "type=e-mail" no <input>: a barra de pesquisa vai bloquear tudo que não for email...
+
+verificar mais validações no "w3schools.com" HTML foms atributes.
+
+maxlength="5": Atributo que define um comprimento máximo para um campo de entrada
+
+O size="50" atributo input especifica a largura visível, em caracteres, de um campo de entrada, ou seja a largura do campo vaiser definida em 50 caracteres ou o valor desejado colocado entre "aspas".

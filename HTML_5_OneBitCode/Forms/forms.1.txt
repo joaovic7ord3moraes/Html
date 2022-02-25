@@ -1,0 +1,3 @@
+FORMs:
+Um formulário HTML é usado para coletar a entrada do usuário. A entrada do usuário é freqüentemente enviada a um servidor para processamento.
+porém vicou um ponto de interrogação na mecanica do <forms>, embora eu já entenda como funciona...

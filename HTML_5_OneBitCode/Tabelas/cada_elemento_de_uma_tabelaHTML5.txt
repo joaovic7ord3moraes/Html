@@ -1,0 +1,9 @@
+Para criar uma tabela você precisa criar a tag: <table border="1" *> e para criar as linhas da tabela <tr>Linha da tabela e para criar o título da coluna usamos o: <th>título de uma coluna da tabela<\th><\tr> <\table>
+
+*o atributo border="1" cria bordas em torno da tabela.
+
+<td>Elemento que vai dentro de th -> ou seja vai ser o elemento de cada título criado para tabela.<\td> -> td significa dados da tabela
+
+<tbody>corpo da tabela -> mais para efeito de código limpo<\tbody>
+<thead>cabeça da tabela -> mais para efeito de código limpo<\thead>*tags semanticas
+<caption>título da tabela<\caption> -> centralisa o título sobre a tabela.
