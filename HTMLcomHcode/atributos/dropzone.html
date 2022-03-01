@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+
+        .box{
+            width: 100px;
+            height: 100px;
+            background-color: tomato;
+        }
+
+        .drop{
+            width: 200px;
+            height: 200px;
+            border: tomato 1px solid;   
+        }
+
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <div id="cx1" class="box" draggable="true"></div>
+    <div id="cx2" class="box" draggable="true"></div>
+
+    <div class="drop" dropzone="copy"></div>
+    <!-------------------------------------->
+    
+    <script>
+        const caixas = document.querySelectorAll('.box');
+        const dropZone = document.querySelector('[dropzone]');
+
+        caixas.forEach(boxEl => {
+
+            boxEl.addEventListener('dragstart' , e => {
+
+               e.dataTransfer.setData('Text', e.target.id);
+               console.log(e.target.id)
+            });
+        })
+
+        dropZone.addEventListener('dragover', e => {
+            
+            e.preventDefault();
+        })
+
+        dropZone.addEventListener('drop' , e =>{
+            
+            const id = e.dataTransfer.getData('Text');
+
+            const element = document.getElementById(id);
+
+            e.target.appendChild(element);
+
+        })
+         
+    </script>
+
+
+</body>
+</html>
